@@ -1,12 +1,12 @@
 {
     "name": "tots/account-laravel",
     "description": "The library for Laravel PHP",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Tots\\Auth\\": "src/"
+            "Tots\\Account\\": "src/"
         }
     },
     "authors": [
