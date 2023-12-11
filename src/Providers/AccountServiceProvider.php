@@ -27,7 +27,7 @@ class AccountServiceProvider extends ServiceProvider
     {
         $mainPath = database_path('migrations');
         $paths = array_merge([
-            './vendor/tots/account-lumen/database/migrations'
+            './vendor/tots/account-laravel/database/migrations'
         ], [$mainPath]);
         $this->loadMigrationsFrom($paths);
     }
