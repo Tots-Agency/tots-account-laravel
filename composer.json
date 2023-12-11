@@ -19,7 +19,7 @@
     "require": {
         "php": "^8.0",
         "laravel/framework": "^10.10",
-        "tots/auth-lumen": "dev-main"
+        "tots/auth-laravel": "dev-main"
     },
     "repositories": [
         {
