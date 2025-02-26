@@ -23,7 +23,7 @@ class AccountMeMiddleware
         // Verify if has permission in account
         $permission = TotsAccountPermission::where('account_id', $account->id)->where('user_id', $request->user()->id)->first();
         if($permission === null){
-            throw new \Exception('Not has permission');
+            return response('Unauthorized.', 401);
         }
 
         return $next($request->merge([TotsAccountPermission::class => $permission]));
